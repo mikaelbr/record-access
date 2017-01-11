@@ -1,0 +1,15 @@
+{
+  "name": "record-access",
+  "version": "1.0.0",
+  "description": "Property accessors as functions similar to .property in elm-lang.",
+  "main": "record-access.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["property accessors", "accessors", "record accessor", "records", "objects"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^18.1.0"
+  }
+}
