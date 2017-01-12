@@ -26,6 +26,10 @@ describe('record-access', function () {
     expect(ra.name(void 0)).toBeUndefined();
   });
 
+  it('should fail gracefully when passing non-object', function () {
+    expect(ra.name('dsa')).toBeUndefined();
+  });
+
   it('should support destructuring', function () {
     const { name } = ra;
     const bill = { name: 'Gates', born: 1955 };
