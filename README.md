@@ -35,11 +35,13 @@ ra.name(bill); //=> val 'Gates' : string
 
 We can use it similarly in things like `map`:
 ```js
+import ra from 'record-access';
+const { name } = ra;
+
 const people = [
   { name: 'Jobs' },
   { name: 'Gates' }
 ];
-
 people.map(name); //=> ['Jobs', 'Gates']
 ```
 
