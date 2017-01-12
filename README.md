@@ -17,13 +17,16 @@ bill = { name = "Gates", age = 57 }
 We can't do strictly the same with staring on `.` in JavaScript due to grammar, but we can do something similar with [JavaScript Proxy](https://github.com/mikaelbr/proxy-fun):
 
 ```js
-import r from 'record-access';
-const { name } = r;
+import ra from 'record-access';
+const { name } = ra;
 // or directly, if using node:
 // const { name } = require('record-access');
 
 const bill = { name: "Gates", age: 57 };
 name(bill); //=> val 'Gates' : string
+
+// or without destructuring:
+ra.name(bill); //=> val 'Gates' : string
 ```
 
 We can use it similarly in things like `map`:
