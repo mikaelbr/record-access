@@ -6,10 +6,25 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": ["property accessors", "accessors", "record accessor", "records", "objects"],
+  "keywords": [
+    "property accessors",
+    "accessors",
+    "record accessor",
+    "records",
+    "objects"
+  ],
   "author": "Mikael Brevik <mikaelbre@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "jest": "^18.1.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaelbr/record-access.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikaelbr/record-access/issues"
+  },
+  "homepage": "https://github.com/mikaelbr/record-access#readme"
 }
