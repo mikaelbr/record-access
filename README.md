@@ -16,6 +16,10 @@ bill = { name = "Gates", age = 57 }
 
 We can't do strictly the same with staring on `.` in JavaScript due to grammar, but we can do something similar with [JavaScript Proxy](https://github.com/mikaelbr/proxy-fun):
 
+```sh
+npm install --save record-access
+```
+
 ```js
 import ra from 'record-access';
 const { name } = ra;

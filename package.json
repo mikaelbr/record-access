@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "keywords": ["property accessors", "accessors", "record accessor", "records", "objects"],
-  "author": "",
+  "author": "Mikael Brevik <mikaelbre@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "jest": "^18.1.0"
