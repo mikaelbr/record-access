@@ -27,14 +27,14 @@ describe('record-access', function () {
   });
 
   it('should support destructuring', function () {
-    const { name } = r;
+    const { name } = ra;
     const bill = { name: 'Gates', born: 1955 };
     expect(ra.name(bill)).toBe('Gates');
   });
 
   it('should support accessor with unvalid variable names', function () {
     const bill = { ['0name']: 'Gates' };
-    expect(r['0name'](bill)).toBe('Gates');
+    expect(ra['0name'](bill)).toBe('Gates');
   });
 
   it('should support being passed in as functions to combinators', function () {
@@ -42,7 +42,7 @@ describe('record-access', function () {
       { name: 'Jobs' },
       { name: 'Gates' }
     ];
-    const { name } = r;
+    const { name } = ra;
     expect(people.map(name)).toEqual(['Jobs', 'Gates']);
   });
 });
