@@ -33,7 +33,7 @@ describe('record-access', function () {
   it('should support destructuring', function () {
     const { name } = ra;
     const bill = { name: 'Gates', born: 1955 };
-    expect(ra.name(bill)).toBe('Gates');
+    expect(name(bill)).toBe('Gates');
   });
 
   it('should support accessor with unvalid variable names', function () {
